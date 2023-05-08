@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"lib": ["ES6", "DOM"],
+		"module": "CommonJS",
+		"allowJs": true,
+		"target": "ESNext",
+		"baseUrl": "src",
+		"sourceMap": true,
+		"typeRoots": ["node_modules/@types", "src/@types"],
+		"moduleResolution": "nodenext",
+		"esModuleInterop": true,
+		"downlevelIteration": true,
+		"noEmit": true,
+		"noImplicitAny": true,
+		"allowSyntheticDefaultImports": true,
+		"allowImportingTsExtensions": true
+	},
+	"include": ["src/**/*", "./server.*"],
+	"exclude": ["node_modules", "dist"]
+}
