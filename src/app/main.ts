@@ -81,6 +81,7 @@ const App = () => {
 	};
 
 	return [
+		k.createElement('title', null, 'Math Skills Practice'),
 		k.createElement('h1', null, 'Math Skills Practice'),
 		k.createElement('p', { className: 'conta', id: 'conta' }, mathExpression),
 		k.createElement(
