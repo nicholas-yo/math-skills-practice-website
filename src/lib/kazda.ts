@@ -10,9 +10,7 @@ const kazda: Kazda = {
 				if (Array.isArray(children)) {
 					for (const child of children) {
 						domRoot.appendChild(
-							convertToHTML(
-								typeof child === 'function' ? child() : child
-							)
+							convertToHTML(typeof child === 'function' ? child() : child)
 						);
 					}
 

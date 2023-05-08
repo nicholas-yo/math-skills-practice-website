@@ -4,10 +4,10 @@
 	"packageManager": "yarn@3.5.0",
 	"scripts": {
 		"dev": "tsnd --respawn --transpile-only ./server.ts",
-		"prettier:fix": "prettier --write \"**/*.(ts|tsx|json)\"",
+		"prettier:fix": "prettier --write \"**/*.(ts|tsx|json|scss)\"",
 		"prettier": "prettier src --check",
 		"lint": "eslint src",
-		"lint:fix": "yarn lint -- --fix",
+		"lint:fix": "yarn lint src --fix",
 		"format": "yarn prettier:fix && yarn lint:fix"
 	},
 	"devDependencies": {

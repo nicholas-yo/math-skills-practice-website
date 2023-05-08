@@ -730,11 +730,10 @@ declare module 'kazda' {
 		| string
 	)[];
 
-	export type Props<K extends keyof HTMLElementTagNameMap> =
-		HTMLAttributes[K] &
-			HTMLEvents & {
-				children: Children<K>;
-			};
+	export type Props<K extends keyof HTMLElementTagNameMap> = HTMLAttributes[K] &
+		HTMLEvents & {
+			children: Children<K>;
+		};
 
 	export type KazdaNode<K extends keyof HTMLElementTagNameMap> = {
 		$$typeof: symbol;
@@ -753,9 +752,7 @@ declare module 'kazda' {
 				children: () => (KazdaNode<K> | (() => KazdaNode<K>))[]
 			): void;
 			render<K extends keyof HTMLElementTagNameMap>(
-				children:
-					| KazdaNode<K>
-					| (KazdaNode<K> | (() => KazdaNode<K>))[]
+				children: KazdaNode<K> | (KazdaNode<K> | (() => KazdaNode<K>))[]
 			): void;
 		};
 	};

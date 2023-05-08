@@ -82,21 +82,13 @@ const App = () => {
 
 	return [
 		k.createElement('h1', null, 'Math Skills Practice'),
-		k.createElement(
-			'p',
-			{ className: 'conta', id: 'conta' },
-			mathExpression
-		),
+		k.createElement('p', { className: 'conta', id: 'conta' }, mathExpression),
 		k.createElement(
 			'form',
 			{
 				onSubmit: handleSubmit
 			},
-			k.createElement(
-				'label',
-				{ htmlFor: 'response' },
-				'Enter the result:'
-			),
+			k.createElement('label', { htmlFor: 'response' }, 'Enter the result:'),
 			k.createElement('input', {
 				type: 'number',
 				id: 'response',

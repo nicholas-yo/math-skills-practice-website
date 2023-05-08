@@ -1,58 +1,59 @@
 h1 {
-  text-align: center;
-  color: #333;
+	text-align: center;
+	color: #333;
 }
 
 .conta {
-  font-size: 24px;
-  margin-top: 40px;
-  text-align: center;
-  color: #333;
+	font-size: 24px;
+	margin-top: 40px;
+	text-align: center;
+	color: #333;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
 
-  label {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
+	label {
+		font-size: 18px;
+		color: #333;
+		margin-bottom: 10px;
+	}
 
-  input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 20px;
-    font-size: 16px;
-    text-align: center;
-    &::-webkit-inner-spin-button,
-    &::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-  }
+	input {
+		padding: 10px;
+		border-radius: 5px;
+		border: none;
+		margin-bottom: 20px;
+		font-size: 16px;
+		text-align: center;
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
 
-  .mensagem {
-    font-size: 18px;
-    margin-top: 20px;
-    text-align: center;
-  }
+	.mensagem {
+		font-size: 18px;
+		margin-top: 20px;
+		text-align: center;
+	}
 
-  button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    &:hover {
-      background-color: #666;
-    }
-  }
+	button {
+		background-color: #333;
+		color: #fff;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		&:hover {
+			background-color: #666;
+		}
+	}
 }

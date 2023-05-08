@@ -3,14 +3,11 @@ import type { CSSProperties, HTMLEvents, KazdaNode } from 'kazda';
 const convertToHTML = <K extends keyof HTMLElementTagNameMap>(
 	kazdaNode: KazdaNode<K>
 ): HTMLElementTagNameMap[K] | Text => {
-	if (typeof kazdaNode === 'string')
-		return document.createTextNode(kazdaNode);
+	if (typeof kazdaNode === 'string') return document.createTextNode(kazdaNode);
 
 	const { props, type } = kazdaNode;
 
-	const domElement = document.createElement(
-		type
-	) as HTMLElementTagNameMap[K];
+	const domElement = document.createElement(type) as HTMLElementTagNameMap[K];
 
 	for (const [propKey, propValue] of Object.entries(props)) {
 		if (propKey === 'style') {
